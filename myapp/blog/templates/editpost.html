@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+{%block content%}
+
+    <div class="container-fluid">
+        <div class="row ">
+            <div class="col-4">
+                <h3>Edit Post</h3>
+                {% if success_message %}
+                    <div class="alert" role="alert">
+                        {{success_message}}
+                    </div>
+                {% endif %}
+                
+                <div class="my-3">
+                    <form method="post" enctype="multipart/form-data">
+                         {% csrf_token %}
+                        <div class="form-group">
+                            <label for="title" class="form-label">Title</label>
+                           <input type="text" class="form-control" name="title" id="title" value="{{form.title.value|default:''}}" >
+                        </div>
+                       
+                        <div class="form-group">
+                            <label for="content" class="form-label">Content</label>
+                            <textarea class="form-control" id="content" name="content">{{form.content.value|default:''}}</textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="image_url" class="form-label">Image URL</label>
+                            <input type="text" class="form-control" id="image_url" name="image_url" value="{{form.img_url.value|default:''}}" >
+                        </div>
+                        <div class="form-group">
+                            <label for="image" class="form-label">Image Upload</label>
+                            <input type="file" class="form-control" id="image" name="image" accept="image/*">
+                        </div>
+                        <div class="form-group">
+                            <label for="slug" class="form-label">Slug</label>
+                            <input type="text" class="form-control" id="slug" name="slug" value="{{form.slug.value|default:''}}" >
+                        </div>
+                       
+                        <div class="update">
+                            
+                            <a href="/" class="back-btns">Go Back to Home</a>
+                            <button type="submit" class="btn btn-primary">Update</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}   
+    
+   

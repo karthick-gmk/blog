@@ -1,0 +1,502 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nav-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: brown;
+    color: white;
+    padding: 20px;
+}
+
+.title-list {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 10px;
+}
+
+.title {
+    color: #fff;
+    font-size: 28px;
+    font-weight: 700;
+    margin: 0;
+}
+.list-link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 6px 10px;
+    border-radius: 6px;
+    transition: 0.2s;
+}
+
+.title-list .list-link:hover{
+    background-color: aliceblue;
+    padding: 10px;
+    color: black;
+    border-radius: 10px;
+}
+
+.bigg-boss{
+    text-align: center;
+}
+
+.content{
+    padding: 20px;
+    font-size: x-large;
+}
+
+
+.member {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    
+}
+
+.member-img{
+    width: 25%;
+    height: 100%;
+    border-radius: 15px;
+}
+
+.member-details{
+    display: flex;
+    margin-top: 120px;
+    margin-bottom: 50px;
+}
+.bio-2{
+    margin-left: 50px;
+    width: 60%;
+    font-size:x-large;
+}
+.bio{
+    margin-left: 20px;
+    width: 60%;
+    font-size:large;
+}
+.bio-details{
+    margin-top: 30px;
+   
+}
+p{
+    font-size: x-large;
+}
+h4{
+    font-size: 18px;
+    margin-top: 20px;
+}
+span{
+    color: rgb(125, 125, 125);
+}
+.read-more{
+    text-decoration: none;
+    border: none;
+    font-size: 18px;
+}
+.footer-section{
+    display: flex;
+    padding: 20px;
+    background-color: brown;
+    color: black;
+}
+
+.footer-about{
+    margin: auto;
+}
+.footer-p{
+    width: 50%;
+    margin-top: 20px;
+}
+.footer-us{
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+.footer-us:hover{
+    color: white;
+    cursor: pointer;
+}
+
+
+.container {
+      width: 90%;
+      max-width: 500px;
+      margin: 60px auto;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    }
+    h2 {
+      text-align: center;
+      color: #333;
+    }
+    label {
+      font-weight: bold;
+      display: block;
+      margin-top: 15px;
+      color: #555;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+    textarea {
+      height: 120px;
+    }
+
+    button {
+      display: block;
+      width: 50%;
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      margin-top: 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+
+    .alert {
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    color: #3c763d;
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
+}
+.detail{
+    display: flex;
+}
+
+
+/* Container styling */
+.container-fluid {
+    height: 100%;
+    padding-top: 40px;
+    width: 60%;
+    margin: auto;
+    margin-bottom: 100px;
+    margin-top: 100px;
+}
+
+/* Card-like form box */
+.col-4 {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+}
+
+/* Heading */
+h3 {
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+
+/* Submit button */
+.btn-primary {
+    padding: 10px 22px;
+    font-weight: 500;
+    border-radius: 8px;
+}
+
+/* Spacing between fields */
+.form-group {
+    margin-bottom: 16px;
+}
+
+.edit-actions {
+    list-style: none;
+    margin-top: 400px;
+    margin-left: 100px;
+    padding: 0;
+    gap: 15px;
+}
+
+.edit-actions li a {
+    display: inline-block;
+    padding: 10px 18px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    color: white;
+    transition: 0.3s ease;
+    margin-top: 10px;
+}
+
+/* Edit Button – Blue */
+.edit-actions li:nth-child(1) a {
+    background: linear-gradient(135deg, #007bff, #00b3ff);
+}
+
+.edit-actions li:nth-child(1) a:hover {
+    transform: scale(1.05);
+    background: linear-gradient(135deg, #005fcc, #0093d9);
+}
+
+/* Delete Button – Red */
+.edit-actions li:nth-child(2) a {
+    background: linear-gradient(135deg, #ff3a3a, #ff6b6b);
+}
+
+.edit-actions li:nth-child(2) a:hover {
+    transform: scale(1.05);
+    background: linear-gradient(135deg, #d82f2f, #ff4d4d);
+}
+
+
+.delete-message {
+    max-width: 500px;
+    margin: 80px auto;
+    padding: 30px;
+    background: #fff;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.15);
+    border-top: 6px solid #ff4d4d;
+    animation: fadeIn 0.6s ease;
+}
+
+.delete-message h1 {
+    font-size: 26px;
+    color: #ff3b3b;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.delete-message p {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.back-btn {
+    display: inline-block;
+    padding: 12px 20px;
+    background: linear-gradient(135deg, #007bff, #00b3ff);
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.back-btn:hover {
+    transform: scale(1.07);
+    background: linear-gradient(135deg, #005fcc, #0093d9);
+}
+
+.back-btns {
+    display: inline-block;
+    background: linear-gradient(135deg, #007bff, #00b3ff);
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: 0.3s ease;
+    width: 50%;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    margin-right: 20px;
+}
+
+.update{
+    display: flex;
+}
+
+@media (max-width: 539px) {
+    .title-list {
+        display: none;
+    }
+
+    /* Center title */
+    .nav-section {
+        justify-content: center !important;
+    }
+
+    .title {
+        font-size: 22px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .member {
+    display: block;
+    
+    }
+    .list-link{
+     display: none;
+    }
+
+    .content-title{
+        padding: 5px;
+        text-align: center;
+        width: 100%;
+        font-size: larger;
+    }
+    .member-img{
+        width: 100%;
+        align-items: center;
+        margin-bottom: 10px;
+   }
+   .member-details{
+        display: block;
+        width: 100%;
+        margin-top: 100px;
+    }
+    .bio{
+        margin: 0;
+        font-size: 15px;
+        width: 100%;
+    }
+    span{
+        font-size: 30px;
+    }
+    .footer-section{
+        display: block;
+    }
+    .footer-about{
+        margin-top: 10px;
+    }
+    .bio-2{
+    margin-left: 0px;
+    width: 100%;
+    font-size:large;
+    }
+    .container-fluid{
+        height: 100%;
+        width: 100%;
+        
+    }
+    .member-img{
+    padding: 5px;
+    text-align: center;
+    width: 100%;
+    height: 20%;
+    font-size: larger;
+    }
+
+     .edit-actions {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+        margin-left: 0px;
+    }
+
+    .edit-actions li a {
+        text-align: center;
+        width: 100%;
+    }
+     .delete-message {
+        margin: 40px 15px;
+        padding: 25px;
+    }
+
+    .delete-message h1 {
+        font-size: 22px;
+    }
+
+    .delete-message p {
+        font-size: 16px;
+    }
+
+    
+}
+
+
+@media (min-width: 541px) and (max-width: 1024px){
+
+    .title {
+        font-size: 22px;
+    }
+
+    .title-list {
+        gap: 15px;
+    }
+
+    .list-link{
+        font-size: 20px;
+    }
+
+   .member{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+   }
+
+     .detail {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .member-details {
+        display: flex;
+        gap: 20px;
+        align-items: flex-start;
+    }
+
+    .member-img {
+        width: 45%;
+        height: auto;
+        border-radius: 10px;
+        object-fit: cover;
+    }
+
+    .bio-2 {
+        width: 55%;
+    }
+
+    .bio-2 h1 {
+        font-size: 24px;
+        margin-bottom: 8px;
+    }
+
+    .bio-2 h4 {
+        font-size: 20px;
+        color: #555;
+        margin-bottom: 12px;
+    }
+
+    .bio-details {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+

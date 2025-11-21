@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{%block content%}   
+    <section>
+        <div class="content">
+            <div class="content-title">
+                <h1 class="bigg-boss">{{blog_titles | upper}}</h1>
+            </div>
+            <div class="member">
+                {% if posts %}
+                {% for post in posts %}
+                <div class="member-details">
+                    <img class="member-img" src="{% if post.image %}{{post.image.url}}{% else %}{{post.img_url}}{% endif %}" alt="viyana">
+                    <div class="bio">
+                        <h1>{{post.title}}</h1>
+                        <h4>{{post.created_at}}</h4>
+                        <p class="bio-details"><span>{{post.content | truncatechars:100}}</span><a href= "{% url 'blog:detail' slug=post.slug %}" class="read-more">Read more...</a></p>
+                    </div>
+                </div>
+                {% endfor %}
+
+                {% else %}
+                <p>No Post Available</p>
+                {% endif %}
+            </div>
+        </div>
+    </section>
+{% endblock %}

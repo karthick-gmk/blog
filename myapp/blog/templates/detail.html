@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{%block content%}
+    <section>
+        <div class="content">
+            <div class="content-title">
+                <h1 class="bigg-boss">Bigg Boss Tamil season 9</h1>               
+            </div>
+            
+            <div class="detail">
+                <div class="member-details">
+                    <img class="member-img" src="{% if post.image %}{{post.image.url}}{% else %}{{post.img_url}}{% endif %}" alt="viyana">
+                    <div class="bio-2">
+                        <h1>{{post.title}}</h1>
+                        <h4>{{post.created_at}}</h4>
+                        <p class="bio-details"><span>{{post.content}}</span></p>
+                    </div> 
+                    <ul class="edit-actions">
+                        <li><a href="/editpost/{{post.slug}}">Edit Post</a></li>
+                        <li><a href="/deletepost/{{post.slug}}">Delete Post</a></li>
+                    </ul>                   
+                </div>
+            </div>
+        </div>
+    </section>
+{%endblock%}
